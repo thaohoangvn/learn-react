@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { AppRegistry, Image, Text, View } from 'react-native';
 
-export default class JustifyContentBasics extends Component {
+export default class AlignItemsBasics extends Component {
   render() {
     return (
       <View style={{flex: 1,
           flexDirection: 'column',
-          justifyContent: 'space-between'
+          justifyContent: 'center',
+          alignItems: 'center',
       }}>
         <View style={{width: 70, height: 50, backgroundColor: 'powderblue'}}></View>
         <View style={{width: 70, height: 50, backgroundColor: 'skyblue'}}></View>
