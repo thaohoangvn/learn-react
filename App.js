@@ -1,40 +1,61 @@
 import React, { Component } from 'react';
-import { Alert, Button, StyleSheet, View } from 'react-native';
+import { Alert, ScrollView, Image, Button, StyleSheet, View, Text } from 'react-native';
 
-export default class ButtonBasics extends Component {
-  _onPressButton() {
-    Alert.alert("You've tapped the button");
-  }
-
+export default class IScrolledDownAndWhatHappenedNextShockedMe extends Component {
   render() {
-    return( 
-      <View style={styles.container}>
-        <View style={styles.buttonContainer}>
-          <Button onPress={this._onPressButton} title="Press Me"></Button>
-        </View>
-        <View style={styles.buttonContainer}>
-          <Button onPress={this._onPressButton} title="Press Me" color="#841584"></Button>
-        </View>
-        <View style={styles.alternativeLayoutButtonContainer}>
-          <Button onPress={this._onPressButton} title="This looks great!"></Button>
-          <Button onPress={this._onPressButton} title="OK!" color="#841584"></Button>
-        </View>
-      </View>
+    return (
+      <ScrollView>
+        <Text style={{fontSize: 96}}>Scroll me, plz</Text>
+        <Image source='http://refutales.eu/wp-content/uploads/2016/10/favicon.png'/>
+        <Image source='http://refutales.eu/wp-content/uploads/2016/10/favicon.png'/>
+        <Image source='http://refutales.eu/wp-content/uploads/2016/10/favicon.png'/>
+        <Image source='http://refutales.eu/wp-content/uploads/2016/10/favicon.png'/>
+        <Image source='http://refutales.eu/wp-content/uploads/2016/10/favicon.png'/>
+        <Text style={{fontSize: 96}}>If you like</Text>
+        <Image source='http://refutales.eu/wp-content/uploads/2016/10/favicon.png'/>
+        <Image source='http://refutales.eu/wp-content/uploads/2016/10/favicon.png'/>
+        <Image source='http://refutales.eu/wp-content/uploads/2016/10/favicon.png'/>
+        <Image source='http://refutales.eu/wp-content/uploads/2016/10/favicon.png'/>
+        <Image source='http://refutales.eu/wp-content/uploads/2016/10/favicon.png'/>
+        <Text style={{fontSize: 96}}>Scrolling down</Text>
+        <Image source='http://refutales.eu/wp-content/uploads/2016/10/favicon.png'/>
+        <Image source='http://refutales.eu/wp-content/uploads/2016/10/favicon.png'/>
+        <Image source='http://refutales.eu/wp-content/uploads/2016/10/favicon.png'/>
+        <Image source='http://refutales.eu/wp-content/uploads/2016/10/favicon.png'/>
+        <Image source='http://refutales.eu/wp-content/uploads/2016/10/favicon.png'/>
+        <Text style={{fontSize: 96}}>Scrolling down</Text>
+        <Image source='http://refutales.eu/wp-content/uploads/2016/10/favicon.png'/>
+        <Image source='http://refutales.eu/wp-content/uploads/2016/10/favicon.png'/>
+        <Image source='http://refutales.eu/wp-content/uploads/2016/10/favicon.png'/>
+        <Image source='http://refutales.eu/wp-content/uploads/2016/10/favicon.png'/>
+        <Image source='http://refutales.eu/wp-content/uploads/2016/10/favicon.png'/>
+        <Text style={{fontSize: 96}}>Scrolling down</Text>
+        <Image source='http://refutales.eu/wp-content/uploads/2016/10/favicon.png'/>
+        <Image source='http://refutales.eu/wp-content/uploads/2016/10/favicon.png'/>
+        <Image source='http://refutales.eu/wp-content/uploads/2016/10/favicon.png'/>
+        <Image source='http://refutales.eu/wp-content/uploads/2016/10/favicon.png'/>
+        <Image source='http://refutales.eu/wp-content/uploads/2016/10/favicon.png'/>
+        <Text style={{fontSize: 96}}>What's the best</Text>
+        <Image source='http://refutales.eu/wp-content/uploads/2016/10/favicon.png'/>
+        <Image source='http://refutales.eu/wp-content/uploads/2016/10/favicon.png'/>
+        <Image source='http://refutales.eu/wp-content/uploads/2016/10/favicon.png'/>
+        <Image source='http://refutales.eu/wp-content/uploads/2016/10/favicon.png'/>
+        <Image source='http://refutales.eu/wp-content/uploads/2016/10/favicon.png'/>
+        <Text style={{fontSize: 96}}>What's the best</Text>
+        <Image source='http://refutales.eu/wp-content/uploads/2016/10/favicon.png'/>
+        <Image source='http://refutales.eu/wp-content/uploads/2016/10/favicon.png'/>
+        <Image source='http://refutales.eu/wp-content/uploads/2016/10/favicon.png'/>
+        <Image source='http://refutales.eu/wp-content/uploads/2016/10/favicon.png'/>
+        <Image source='http://refutales.eu/wp-content/uploads/2016/10/favicon.png'/>
+        <Text style={{fontSize: 96}}>Framework around?</Text>
+        <Image source='http://refutales.eu/wp-content/uploads/2016/10/favicon.png'/>
+        <Image source='http://refutales.eu/wp-content/uploads/2016/10/favicon.png'/>
+        <Image source='http://refutales.eu/wp-content/uploads/2016/10/favicon.png'/>
+        <Image source='http://refutales.eu/wp-content/uploads/2016/10/favicon.png'/>
+        <Image source='http://refutales.eu/wp-content/uploads/2016/10/favicon.png'/>
+        <Text style={{fontSize: 96}}>React Native!!!</Text>
+      </ScrollView>
     );
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-  },
-  buttonContainer: {
-    margin: 20,
-  },
-  alternativeLayoutButtonContainer: {
-    margin: 20,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-  }
-})
